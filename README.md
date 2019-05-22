@@ -1,5 +1,6 @@
 # Convicencia Social
 Para este proyecto se uso Infyom para ayudar a generar los cruds de laravel.
+documentacion de infyom [Aquí](http://labs.infyom.com/laravelgenerator/docs/5.8/introduction).
 
 ## Instalacion
 Para la instalacion solo se requiere descargar el repor y seguimos los pasos:
