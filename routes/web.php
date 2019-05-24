@@ -49,3 +49,31 @@ Route::resource('areas', 'AreasController');
 Route::resource('grupos', 'GruposController');
 
 Route::resource('grados', 'GradosController');
+
+Route::resource('asignaturas', 'AsignaturasController');
+
+Route::resource('asignaturasDocentes', 'AsignaturasDocentesController');
+
+Route::resource('roles', 'RolesController');
+
+Route::resource('estudiantes', 'EstudiantesController');
+
+Route::resource('estudiantes', 'EstudiantesController');
+
+Route::resource('padres', 'PadresController');
+
+Route::resource('padresEstudiantes', 'PadresEstudiantesController');
+
+Route::resource('tipoObservaciones', 'TipoObservacionesController');
+
+Route::resource('observaciones', 'ObservacionesController');
+
+Route::resource('tipoFaltas', 'TipoFaltaController');
+
+Route::resource('tipoFaltas', 'TipoFaltaController');
+
+Route::resource('procesoDisciplinarios', 'ProcesoDisciplinarioController');
+
+Route::resource('observacionesProcesosDisciplinarios', 'ObservacionesProcesosDisciplinariosController');
+
+Route::resource('observacionesProcesosDisciplinarios', 'ObservacionesProcesosDisciplinariosController');
