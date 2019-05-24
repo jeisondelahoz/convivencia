@@ -29,3 +29,11 @@ Route::resource('tipo_documentos', 'TipoDocumentosAPIController');
 Route::resource('personas', 'PersonasAPIController');
 
 Route::resource('personas', 'PersonasAPIController');
+
+Route::resource('docentes', 'DocentesAPIController');
+
+Route::resource('areas', 'AreasAPIController');
+
+Route::resource('grupos', 'GruposAPIController');
+
+Route::resource('grados', 'GradosAPIController');

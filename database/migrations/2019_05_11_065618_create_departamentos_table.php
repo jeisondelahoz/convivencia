@@ -17,6 +17,7 @@ class CreateDepartamentosTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->integer('paises_id')->unsigned();
+            $table->timestamps();
             $table->softDeletes();
             $table->foreign('paises_id')->references('id')->on('paises');
         });

@@ -25,8 +25,9 @@ class CreatePersonasTable extends Migration
             $table->string('telefonoFijo');
             $table->string('telefonoCelular');
             $table->string('direccion');
-            $table->integer('users_id')->unsigned();
+            $table->bigInteger('users_id')->unsigned();
             $table->integer('municipios_id')->unsigned();
+            $table->timestamps();
             $table->softDeletes();
             $table->foreign('tipo_documentos_id')->references('id')->on('tipo_documentos');
             $table->foreign('users_id')->references('id')->on('users');

@@ -17,6 +17,7 @@ class CreateMunicipiosTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->integer('departamentos_id')->unsigned();
+            $table->timestamps();
             $table->softDeletes();
             $table->foreign('departamentos_id')->references('id')->on('departamentos');
         });

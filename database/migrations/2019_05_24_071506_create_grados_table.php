@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateTipoDocumentosTable extends Migration
+class CreateGradosTable extends Migration
 {
 
     /**
@@ -13,11 +13,12 @@ class CreateTipoDocumentosTable extends Migration
      */
     public function up()
     {
-        Schema::create('tipo_documentos', function (Blueprint $table) {
+        Schema::create('grados', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->timestamps();
+            $table->integer('grupos_id')->unsigned();
             $table->softDeletes();
+            $table->foreign('grupos_id')->references('id')->on('grupos');
         });
     }
 
@@ -28,6 +29,6 @@ class CreateTipoDocumentosTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tipo_documentos');
+        Schema::drop('grados');
     }
 }

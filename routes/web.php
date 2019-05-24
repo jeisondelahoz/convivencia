@@ -41,3 +41,11 @@ Route::resource('tipoDocumentos', 'TipoDocumentosController');
 Route::resource('personas', 'PersonasController');
 
 Route::resource('personas', 'PersonasController');
+
+Route::resource('docentes', 'DocentesController');
+
+Route::resource('areas', 'AreasController');
+
+Route::resource('grupos', 'GruposController');
+
+Route::resource('grados', 'GradosController');
