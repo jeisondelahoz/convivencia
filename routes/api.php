@@ -62,6 +62,4 @@ Route::resource('tipo_faltas', 'TipoFaltaAPIController');
 
 Route::resource('proceso_disciplinarios', 'ProcesoDisciplinarioAPIController');
 
-Route::resource('observaciones_procesos_disciplinarios', 'ObservacionesProcesosDisciplinariosAPIController');
-
-Route::resource('observaciones_procesos_disciplinarios', 'ObservacionesProcesosDisciplinariosAPIController');
+Route::resource('observaciones_prodisciplinarios', 'ObservacionesProcesosDisciplinariosAPIController');
